@@ -75,11 +75,16 @@ public class MainActivity extends AppCompatActivity
         if (id == R.id.nav_map) {
             // Handle the camera action
         }  else if (id == R.id.nav_sair) {
-
+            sairAplicativo();
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+    public void sairAplicativo(){
+        android.os.Process.killProcess(android.os.Process.myPid());
+        System.exit(1);
     }
 }
