@@ -12,17 +12,20 @@
         android:layout_height="58dp"
         android:layout_alignBottom="@+id/sign_in_button"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="80dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="8dp"
         android:src="@drawable/common_google_signin_btn_icon_dark"
-        app:layout_constraintTop_toBottomOf="@+id/etSenha"
-        tools:layout_editor_absoluteX="138dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etSenha" />
 
     <EditText
         android:id="@+id/etEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="72dp"
+        android:layout_marginTop="40dp"
         android:layout_marginEnd="8dp"
         android:ems="10"
         android:hint="Digite seu Email"
@@ -30,19 +33,20 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
     <EditText
         android:id="@+id/etSenha"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="12dp"
         android:layout_marginEnd="8dp"
         android:ems="10"
         android:hint="Digite sua senha"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etEmail" />
 
@@ -50,8 +54,9 @@
         android:id="@+id/btnEntrar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:text="Entrar"
+        android:textSize="18sp"
         app:layout_constraintTop_toBottomOf="@+id/etSenha"
         tools:layout_editor_absoluteX="85dp" />
 
@@ -59,16 +64,42 @@
         android:id="@+id/btnSair"
         android:layout_width="92dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="8dp"
         android:text="Sair"
+        android:textSize="18sp"
         app:layout_constraintTop_toBottomOf="@+id/etSenha"
-        tools:layout_editor_absoluteX="208dp" />
+        tools:layout_editor_absoluteX="194dp" />
 
     <TextView
         android:id="@+id/tvLogin"
         android:layout_width="91dp"
         android:layout_height="33dp"
+        android:layout_marginTop="8dp"
         android:text="LOGIN"
-        tools:layout_editor_absoluteX="85dp"
-        tools:layout_editor_absoluteY="31dp" />
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        tools:layout_editor_absoluteX="85dp" />
+
+    <Button
+        android:id="@+id/btnCadastrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:text="Cadastrar"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="264dp"
+        android:layout_height="155dp"
+        app:srcCompat="@drawable/icone"
+        tools:layout_editor_absoluteX="60dp"
+        tools:layout_editor_absoluteY="0dp" />
 </android.support.constraint.ConstraintLayout>
