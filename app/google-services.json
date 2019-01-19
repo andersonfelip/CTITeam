@@ -23,6 +23,14 @@
           }
         },
         {
+          "client_id": "861680742180-8l08m1j6en36ufnqk6k5dnl8fa6p9esq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.nadjane.cti",
+            "certificate_hash": "93b27f6e3fa261a619841160a91035f537dc5e31"
+          }
+        },
+        {
           "client_id": "861680742180-cfo80ib8uacbjhlgqtgv6dnfn720t518.apps.googleusercontent.com",
           "client_type": 3
         }

@@ -21,7 +21,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".LoginActivity" />
-        <activity android:name=".googleActivity"></activity>
+        <activity android:name=".googleActivity" />
+        <activity android:name=".cadastroActivity"></activity>
     </application>
 
 </manifest>
